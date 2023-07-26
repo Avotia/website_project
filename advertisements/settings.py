@@ -78,7 +78,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+    'hw_lesson_6': {                                # название подключения
+        'ENGINE': 'django.db.backends.postgresql',  # движок БД
+        'NAME': 'lesson6',                          # имя БД
+        "USER": "lesson6user",                      # имя пользователя
+        "PASSWORD": "mypassword",                   # пароль, используемый при подключении к БД
+        "HOST": " 127.0.0.1",                       # хост БД (среда базы данных в облачной инфраструктуре)
+        "PORT": "5432",                             # порт для связи с БД
+    },
+
 }
 
 
